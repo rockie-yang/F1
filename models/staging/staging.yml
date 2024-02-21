@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    -   name: stg_f1_dataset__constructor_results
+        config:
+            enabled: true
+
+    -   name: stg_f1_dataset__constructor_standings
+        config:
+            enabled: true

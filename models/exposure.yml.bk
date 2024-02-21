@@ -1,0 +1,24 @@
+version: 2
+
+exposures:
+  - name: constructor_records
+    type: dashboard
+    owner:
+      name: Rocky Yang
+      email: knockdata@gmail.com
+    depends_on:
+      - ref('constructor_points')
+    description: constructor record
+    url: https://looker.company.com/dashboards/123
+    maturity: high
+    
+  - name: driver_records
+    type: dashboard
+    owner:
+      name: Rocky Yang
+      email: knockdata@gmail.com
+    depends_on:
+      - ref('driver_points')
+    description: driver records
+    url: https://looker.company.com/dashboards/123
+    maturity: high
