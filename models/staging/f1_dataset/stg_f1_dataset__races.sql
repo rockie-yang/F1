@@ -8,7 +8,7 @@ with races as (
          url as race_url,
          name as race_name
 
-    from {{ source('f1_dataset', 'races') }}
+    from {{ ref('races') }}
 ),
 
 circuits as (

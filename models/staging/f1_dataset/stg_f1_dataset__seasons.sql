@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('f1_dataset', 'seasons') }}
+    select * from {{ ref('seasons') }}
 
 ),
 

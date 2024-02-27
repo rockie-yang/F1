@@ -9,7 +9,7 @@ with circuits as (
          circuit_ref,
          location as circuit_location
 
-    from {{ source('f1_dataset', 'circuits') }}
+    from {{ ref('circuits') }}
 )
 
 select *

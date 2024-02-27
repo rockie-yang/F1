@@ -21,13 +21,13 @@ with results as (
          position_text,
           rank::INTEGER as rank
 
-    from {{ source('f1_dataset', 'results') }}
+    from {{ ref('results') }}
 ),
 
 status_descriptions as (
   select status_id,
          status as status_desc
-    from {{ source('f1_dataset', 'status') }}
+    from {{ ref('status') }}
 ),
 
 position_descriptions as (

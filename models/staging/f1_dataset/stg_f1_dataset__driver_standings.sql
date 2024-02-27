@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('f1_dataset', 'driver_standings') }}
+    select * from {{ ref('driver_standings') }}
 
 ),
 

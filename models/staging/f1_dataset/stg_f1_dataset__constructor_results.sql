@@ -3,7 +3,7 @@ with
 
 source as (
 
-    select * from {{ source('f1_dataset', 'constructor_results') }}
+    select * from {{ ref('constructor_results') }}
 
 ),
 

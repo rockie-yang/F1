@@ -5,7 +5,7 @@ with lap_times as (
          position,
          time,
          milliseconds
-    from {{ source('f1_dataset', 'lap_times') }}
+    from {{ ref('lap_times') }}
 )
 
 select *

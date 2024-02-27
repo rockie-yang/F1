@@ -6,7 +6,7 @@
 
 source as (
 
-    select * from {{ source('f1_dataset', 'constructor_standings') }}
+    select * from {{ ref('constructor_standings') }}
 
 ),
 
